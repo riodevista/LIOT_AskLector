@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+    <include layout="@layout/toolbar"
+             android:id="@+id/toolbar"/>
+
+
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+            <EditText
+                android:id="@+id/comment_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Ваш комментарий"
+                android:maxLines="5"
+                android:maxLength="400"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="textCapSentences|textMultiLine"
+                />
+            <Button
+                android:id="@+id/send_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Отправить"/>
+    </LinearLayout>
+    <View
+        android:background="@drawable/background_bottom_border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/input_container"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/input_container">
+        <ListView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+    <!--android:divider="@null"
+            android:dividerHeight="0dp"-->

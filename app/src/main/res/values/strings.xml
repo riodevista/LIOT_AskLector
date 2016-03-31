@@ -1,0 +1,97 @@
+<resources>
+
+    <string name="app_name">AskLector</string>
+    <string name="google_survey_link">https://docs.google.com/forms/d/1imE6Hit33KgTvYdkjXd1_AnLSham7mVcqP6HNl0cR0Y/viewform</string>
+
+    <!-- LoginActivity -->
+
+    <string name="LoginActivity_title">Авторизация</string>
+
+    <string name="enter_your_name">Введите имя, под которым вы будете значиться в системе.</string>
+    <string name="allowed_characters">Допустимы латиница, точка, дефис и нижнее подчёркивание.</string>
+    <string name="username_text_field_hint">Ваше имя</string>
+    <string name="sendNameButton_title">Продолжить</string>
+
+    <string name="auth_error_too_long_name">Длина имени превышает 15 символов</string>
+    <string name="auth_error_invalid_characters">Недопустимые символы</string>
+
+    <string name="auth_error_conflict_username">Пользователь с таким именем уже зарегистрирован</string>
+    <string name="auth_error_unknown">
+        Не удалось авторизоваться.\nПочему бы не попробовать ещё раз?
+    </string>
+
+
+
+    <!-- ConnectToLectureActivity -->
+
+    <string name="LectureConnectionActivity_title">Лекция</string>
+
+    <string name="enter_lecture_id">%1$s,\nвведите идентификатор лекции для подключения к ней.</string>
+    <string name="lecture_id_text_field_hint">ID лекции</string>
+    <string name="connectToLectureWithIdButton_title">Подключиться</string>
+    
+    <string name="error_too_short_lecture_id">Слишком короткий идентификатор лекции.</string>
+
+    <string name="lecture_connection_error_unknown">
+        Не удалось подключиться к лекции.\nПочему бы не попробовать ещё раз?
+    </string>
+
+
+    <!-- ContainerActivity -->
+
+    <string name="refresh_button_title">Обновить</string>
+
+    <string name="navigation_drawer_open">Открыть</string>
+    <string name="navigation_drawer_close">Закрыть</string>
+
+
+    <string name="QuestionsListFragment_title">Вопросы</string>
+
+    <string name="load_questions_unknown_error">
+        Не удалось загрузить вопросы.\nПочему бы не попробовать ещё раз?
+    </string>
+
+    <string name="ask_question_unknown_error">
+        Не удалось отправить вопрос.\nПочему бы не попробовать ещё раз?
+    </string>
+
+    <!--<string name="ask_question_success">Не спрашивай больше такого, пожалуйста.</string>-->
+    <string name="ask_question_success">Вопрос успешно отправлен и скоро появится в общем списке.</string>
+
+    <string name="about_app">О приложении</string>
+    <string name="vote_for_question_unknown_error">Не удалось проголосовать.\nПочему бы не попробовать ещё раз?</string>
+    <string name="are_you_sure_to_disconnect_from_lecture">Вы уверены, что хотите покинуть лекцию?</string>
+    <string name="show_survey">Отправить отзыв</string>
+    <string name="lecture_not_found">Лекция не найдена</string>
+    <string name="lecture_not_started">Лекция ещё не началась.</string>
+    <string name="lecture_is_ended">К сожалению, лекция уже закончилась.</string>
+    <string name="survey_not_available">К сожалению, анкета недоступна.</string>
+    <string name="disconnect_from_lecture">Выйти из лекции</string>
+    <string name="empty_question_error">Невозможно отправить пустой вопрос</string>
+
+
+
+    <!-- About application dialog -->
+
+    <string name="contact_developers">Связаться с разработчиками:</string>
+    <string name="app_version">Версия %1$s</string>
+    <string name="email_to_contact">basileyvjiks@gmail.com</string>
+
+
+    <!-- Miscellaneous -->
+
+    <string name="AskQuestionActivity_title">Задать вопрос</string>
+    <string name="connection_error">Ошибка подключения.\nПроверьте ваше подключение к интернету.</string>
+    <string name="descr_overflow_button">Меню</string>
+    <string name="action_complain">Пожаловаться</string>
+    <string name="question_activity_title">Вопрос</string>
+    <string name="comments_unknown_error">Не удалось загрузить комментарии.\nПочему бы не попробовать ещё раз?</string>
+    <string name="send_comment_unknown_error">Не удалось отправить комментарий.</string>
+    <string name="send_comment_success">Комментарий успешно отправлен.</string>
+    <string name="send_comment_empty_error">Невозможно отправить пустой комментарий.</string>
+    <string name="show_answers">Ответы на вопросы</string>
+    <string name="answers_link">https://asklector.mipt.ru/frontend/web/answers/</string>
+    <string name="report_question_as_spam_success">Вопрос отмечен как спам.</string>
+
+
+</resources>

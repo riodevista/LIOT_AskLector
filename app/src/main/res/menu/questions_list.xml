@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_refresh_questions_list"
+          android:title="@string/refresh_button_title"
+          android:icon="@drawable/ic_refresh_white_24dp"
+          android:orderInCategory="2"
+          app:showAsAction="always"
+          android:visible="false"/>-->
+      <item android:id="@+id/action_show_answers"
+            android:title="@string/show_answers"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            android:visible="true"/>
+    <item android:id="@+id/action_show_survey"
+          android:title="@string/show_survey"
+          android:orderInCategory="2"
+          app:showAsAction="never"
+          android:visible="true"/>
+      <item android:id="@+id/action_about_app"
+            android:title="@string/about_app"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:visible="true"/>
+      <item android:id="@+id/action_disconnect_from_lecture"
+            android:title="@string/disconnect_from_lecture"
+            android:orderInCategory="4"
+            app:showAsAction="never"
+            android:visible="true"/>
+</menu>
